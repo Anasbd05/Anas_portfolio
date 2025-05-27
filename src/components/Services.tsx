@@ -1,0 +1,24 @@
+import React from 'react'
+import {Services} from '@/assets/assets'
+
+const ServicesPage = () => {
+    return (
+        <section className='py-14 px-4 md:px-10 lg:px-12 '>
+            <div className="flex mb-10 max-w-xl mx-auto flex-col items-center">
+                <h1 className=' tag  '>Services</h1>
+                <p className='text-to text-center font-medium mt-2'>We offer landing pages, e-commerce, SEO, and more — all tailored to grow your online presence.</p>
+            </div>
+            <main className='grid gap-6 px-6 md:px-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-4'>
+                {Services.map((service,index) => (
+                    <div className='p-5 rounded-lg shadow border border-neutral-500 hover:shadow-[3px_3px] shadow-to duration-500 ' key={index}>
+                        <span>{service.icon}</span>
+                        <h1 className='font-bold text-lg mt-5 mb-1'>{service.title}</h1>
+                        <p className={" "}>{service.description}</p>
+                    </div>
+                ))}
+            </main>
+        </section>
+    )
+}
+
+export default ServicesPage
