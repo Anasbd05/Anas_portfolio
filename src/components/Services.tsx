@@ -12,8 +12,8 @@ const ServicesPage = () => {
                 {Services.map((service,index) => (
                     <div className='p-5 rounded-lg shadow border border-neutral-500 hover:shadow-[3px_3px] shadow-to duration-500 ' key={index}>
                         <span>{service.icon}</span>
-                        <h1 className='font-bold text-lg mt-5 mb-1'>{service.title}</h1>
-                        <p className={" "}>{service.description}</p>
+                        <h1 className='font-bold text-lg mt-5 mb-2'>{service.title}</h1>
+                        <p className="text-neutral-700 ">{service.description}</p>
                     </div>
                 ))}
             </main>

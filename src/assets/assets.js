@@ -4,6 +4,10 @@ import react from "./react.svg"
 import supabase from "./supabase.svg"
 import next from "./nextjs.svg"
 import github from "./github.png"
+import restau from "./restau.png"
+import interieur from "./interieur.png"
+import saas from "./saas.png"
+import store from "./store.png"
 import { BriefcaseBusiness, ChartSpline, Code, Layers, NotebookPen, ShoppingBasket, Zap } from 'lucide-react';
 
 
@@ -39,4 +43,57 @@ export const infoList = [
 
 export const tools = [
     vscode,git , react , next , supabase , github
+];
+
+export const projects = [
+  {
+    title: "E-commerce Platform",
+    image: store,
+    description: "Developed a responsive, high-performance e-commerce landing page optimized for conversions and user engagement, with dynamic content and seamless user experience.",
+    tools: [
+      "TypeScript",
+      "Next.js",
+      "Supabase",
+      "Tailwind CSS"
+    ],
+    url: "https://airtalee-design.vercel.app",
+    github : "https://github.com/Anasbd05/interior-des"
+  },
+  {
+    title: "Food Delivery",
+    image: restau,
+    description: "Built a modern and intuitive front-end for a food delivery service, focusing on speed, usability, and mobile responsiveness to enhance the ordering experience.",
+    tools: [
+      "JavaScript",
+      "React.js",
+      "Tailwind CSS"
+    ],
+    url: "https://delivery-food-sigma.vercel.app",
+    github : "https://github.com/Anasbd05/Delivery-food"
+  },
+  {
+    title: "Interior Design",
+    image: interieur,
+    description: "Created a sleek and visually engaging landing page for an interior design service, with dynamic sections and a strong visual identity to attract high-end clients.",
+    tools: [
+      "TypeScript",
+      "Next.js",
+      "Supabase",
+      "Tailwind CSS"
+    ],
+    url: "https://decosit4u.vercel.app",
+    github : "https://github.com/Anasbd05/decosit_interior"
+  },
+  {
+    title: "SaaS Product",
+    image: saas,
+    description: "Designed a clean and conversion-focused SaaS landing page with responsive UI and strong call-to-action elements tailored to B2B audiences.",
+    tools: [
+      "TypeScript",
+      "Next.js",
+      "Tailwind CSS"
+    ],
+    url: "https://uiimage.vercel.app/",
+    github : "https://github.com/Anasbd05/Trying_UiX"
+  }
 ];

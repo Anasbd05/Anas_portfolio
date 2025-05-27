@@ -5,7 +5,7 @@ import {Download} from 'lucide-react'
 import Link from 'next/link'
 const Hero = () => {
     return (
-        <section className=' py-14 px-4 flex flex-col items-center bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#7886C7,#EAEEFE_100%)] '>
+        <section className=' py-14 px-4 -mt-5 flex flex-col items-center bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#7886C7,#EAEEFE_100%)] '>
             <Image src={profile} alt='' width={180} height={180} />
             <div className="max-w-xl flex-col flex items-center ">
                 <span className='mt-5 font-head font-medium '>Hi! I&#39;m Anas Boumediani  </span>
