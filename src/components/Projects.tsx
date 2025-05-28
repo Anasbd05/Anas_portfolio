@@ -9,13 +9,16 @@ const Projects = () => {
     return (
         <section className='py-20 px-4 md:px-10 lg:px-12'>
             <h1 className='tag mb-8'>Projects</h1>
-            <main className='flex flex-col gap-16 px-6 md:px-10 '>
+            <main className='flex flex-col gap-16 px-6 md:px-10 lg:px-8 xl:px10 '>
                 {projects.map((project,index) => (
-                    <div key={index} className={`flex flex-col lg:flex gap-8 lg:gap-16 ring ring-neutral-600 p-4 lg:ring-0 rounded-lg ${(project.url === "https://delivery-food-sigma.vercel.app" || project.url === "https://uiimage.vercel.app/")
-                        ? "lg:flex-row-reverse"
+                    <div key={index} className={`flex flex-col gap-8 xl:gap-24 ring ring-neutral-600 p-4 lg:ring-0 rounded-lg ${(project.url === "https://delivery-food-sigma.vercel.app" || project.url === "https://uiimage.vercel.app/")
+                        ? "lg:flex-row-reverse "
                         : "lg:flex-row"
                         }`}>
-                        <Image src={project.image} alt={project.title} width={500} height={600} className='rounded-md' />
+                        <Image src={project.image} alt={project.title} width={500} height={600} className={` rounded-xl hidden lg:block ${(project.url === "https://delivery-food-sigma.vercel.app" || project.url === "https://uiimage.vercel.app/")
+                            ? " shadow-[-20px_-20px] shadow-[#cbd1eabe] "
+                            : "shadow-[20px_-20px] shadow-[#cbd1eabe]"
+                            }`} />
                         <main className='flex flex-col'>
                             <h1 className='text-xl font-bold mb-2'>{project.title}</h1>
                             <div className='flex gap-4 flex-wrap mb-3.5'>

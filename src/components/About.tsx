@@ -33,7 +33,7 @@ const About = () => {
                         <h4 className='font-semibold mb-1'>Tools i use : </h4>
                         <div className="flex gap-2 md:gap-4 flex-wrap">
                             {tools.map((tool,index) => (
-                                <Image src={tool} key={index} alt='' width={55} height={55} className='p-2 border w-11 h-11 md:w-14 md:h-14 border-neutral-800 rounded-md hover:scale-110 duration-500 ' />
+                                <Image src={tool} key={index} alt='' width={55} height={55} className='p-2 border w-11 h-11 md:w-[55px] md:h-[55px] border-neutral-800 rounded-md hover:scale-110 duration-500 ' />
                             ))}
                         </div>
                     </div>

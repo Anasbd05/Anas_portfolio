@@ -2,12 +2,12 @@ import vscode from './vscode.png';
 import git from './git.png';
 import react from "./react.svg"
 import supabase from "./supabase.svg"
+import tailwind from "./Tailwind CSS.png"
 import next from "./nextjs.svg"
 import github from "./github.png"
-import restau from "./restau.png"
-import interieur from "./interieur.png"
-import saas from "./saas.png"
-import store from "./store.png"
+import restau from "./food.png"
+import interieur from "./Inter.png"
+import store from "./interstore.png"
 import { BriefcaseBusiness, ChartSpline, Code, Layers, NotebookPen, ShoppingBasket, Zap } from 'lucide-react';
 
 
@@ -42,7 +42,7 @@ export const infoList = [
 ];
 
 export const tools = [
-    vscode,git , react , next , supabase , github
+    vscode,git , react , tailwind , next , supabase , github
 ];
 
 export const projects = [
@@ -84,16 +84,43 @@ export const projects = [
     url: "https://decosit4u.vercel.app",
     github : "https://github.com/Anasbd05/decosit_interior"
   },
+];
+
+export const pricingPlans = [
   {
-    title: "SaaS Product",
-    image: saas,
-    description: "Designed a clean and conversion-focused SaaS landing page with responsive UI and strong call-to-action elements tailored to B2B audiences.",
-    tools: [
-      "TypeScript",
-      "Next.js",
-      "Tailwind CSS"
+    id: 1,
+    title: "Landing Page",
+    description: "A modern, responsive one-page website to showcase your product or service.",
+    price: "999DH",
+    features: [
+      "Custom design",
+      "Responsive layout",
+      "Contact form",
+      "Fast loading speed",
     ],
-    url: "https://uiimage.vercel.app/",
-    github : "https://github.com/Anasbd05/Trying_UiX"
-  }
+  },
+  {
+    id: 2,
+    title: "E-commerce",
+    description: "A complete online store with product listings, cart, and checkout functionality.",
+    price: "1800DH",
+    features: [
+      "Product pages",
+      "Shopping cart & checkout",
+      "Payment gateway integration",
+      "Admin dashboard",
+    ],
+  },
+  {
+    id: 3,
+    title: "Other",
+    description: "Need something unique? Let's discuss your idea and build a custom solution.",
+    price: "Custom",
+    features: [
+      "Tailored to your needs",
+      "Flexible features",
+      "Consultation included",
+      "Scalable design",
+    ],
+  },
 ];
