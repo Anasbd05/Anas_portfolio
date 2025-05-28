@@ -7,8 +7,8 @@ import {infoList,tools} from '@/assets/assets'
 
 const About = () => {
     return (
-        <section className='py-12 bg-[#FEFEFA] bg-forground md:py-14 px-4 md:px-10 lg:px-12 '>
-            <h1 className=' tag mb-10 '>About Me</h1>
+        <section id='about' className='py-12 bg-[#FEFEFA] bg-forground md:py-14 px-4 md:px-10 lg:px-12 '>
+            <h1 className=' tag mb-10 text-center'>About Me</h1>
             <main className='flex flex-col items-center lg:flex-row gap-10 lg:gap-20 px-6 md:px-10 '>
                 <Image alt='Profile image' src={profile} width={360} height={500} className='' />
                 <div className="flex flex-col gap-6">

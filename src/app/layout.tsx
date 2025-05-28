@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body cz-shortcut-listen="true"
-        className={`${inter.className} ${headingFont.variable} bg-[#EAEEFE] antialiased`}
+        className={`${inter.className} ${headingFont.variable} bg-white antialiased`}
       >
         {children}
       </body>

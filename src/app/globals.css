@@ -6,5 +6,9 @@
 }
 
 .tag {
-  @apply text-center text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-b from-black to-to bg-clip-text text-transparent
+  @apply text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-b from-black to-to bg-clip-text text-transparent
+}
+
+html {
+  scroll-behavior: smooth;
 }

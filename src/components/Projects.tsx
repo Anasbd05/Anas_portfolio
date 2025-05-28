@@ -7,8 +7,8 @@ import React from 'react'
 
 const Projects = () => {
     return (
-        <section className='py-20 px-4 md:px-10 lg:px-12'>
-            <h1 className='tag mb-8'>Projects</h1>
+        <section id='projects' className='py-20 px-4 md:px-10 lg:px-12 bg-gradient-to-b from-white to-[#D2DCFF] '>
+            <h1 className='tag mb-8 text-center'>Projects</h1>
             <main className='flex flex-col gap-16 px-6 md:px-10 lg:px-8 xl:px10 '>
                 {projects.map((project,index) => (
                     <div key={index} className={`flex flex-col gap-8 xl:gap-24 ring ring-neutral-600 p-4 lg:ring-0 rounded-lg ${(project.url === "https://delivery-food-sigma.vercel.app" || project.url === "https://uiimage.vercel.app/")

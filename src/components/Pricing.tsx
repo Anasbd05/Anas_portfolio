@@ -4,7 +4,7 @@ import React from 'react'
 
 const Pricing = () => {
     return (
-        <section className='py-10 bg-[#FEFEFA] md:py-14 lg:py-16'>
+        <section id='pricing' className='py-10 bg-[#FEFEFA] md:py-14 lg:py-16'>
             <div className="flex mb-10 max-w-xl mx-auto flex-col items-center">
                 <h1 className=' tag mb-2'>Pricing</h1>
                 <p className='text-to text-center font-medium'>

@@ -3,7 +3,7 @@ import {Services} from '@/assets/assets'
 
 const ServicesPage = () => {
     return (
-        <section className='py-14 px-4 md:px-10 lg:px-12 '>
+        <section id='services' className='py-14 px-4 md:px-10 lg:px-12 '>
             <div className="flex mb-10 max-w-xl mx-auto flex-col items-center">
                 <h1 className=' tag mb-2 '>Services</h1>
                 <p className='text-to text-center font-medium'>We offer landing pages, e-commerce, SEO, and more — all tailored to grow your online presence.</p>

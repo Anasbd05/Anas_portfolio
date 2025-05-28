@@ -10,6 +10,10 @@ import interieur from "./Inter.png"
 import store from "./interstore.png"
 import { BriefcaseBusiness, ChartSpline, Code, Layers, NotebookPen, ShoppingBasket, Zap } from 'lucide-react';
 
+import instagram from "./instagram.png"
+import whatsapp from "./whatsapp.png"
+import twitter from "./twitter.png"
+
 
 export const Services = [
   {
@@ -124,3 +128,19 @@ export const pricingPlans = [
     ],
   },
 ];
+
+export const social_media = [
+  {
+    img : instagram,
+    url : "https://www.instagram.com/vnas_tryiing/"
+  },
+  {
+    img : whatsapp,
+    url : ""
+  },
+  {
+    img : twitter,
+    url : "https://x.com/Anas_bd01"
+  }
+  
+]
