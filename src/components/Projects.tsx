@@ -1,6 +1,7 @@
+"use client"
 import {projects} from '@/assets/assets'
+import {motion} from 'framer-motion'
 import {Send} from 'lucide-react'
-import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
@@ -15,10 +16,14 @@ const Projects = () => {
                         ? "lg:flex-row-reverse "
                         : "lg:flex-row"
                         }`}>
-                        <Image src={project.image} alt={project.title} width={500} height={600} className={` rounded-xl hidden lg:block ${(project.url === "https://delivery-food-sigma.vercel.app" || project.url === "https://uiimage.vercel.app/")
-                            ? " shadow-[-20px_-20px] shadow-[#cbd1eabe] "
-                            : "shadow-[20px_-20px] shadow-[#cbd1eabe]"
-                            }`} />
+                        <motion.img src={project.image.src}
+                            initial={{opacity: 0,scale: .8}}
+                            whileInView={{opacity: 1,scale: 1}}
+                            transition={{duration: 0.6}}
+                            alt={project.title} width={500} height={600} className={` rounded-xl hidden lg:block ${(project.url === "https://delivery-food-sigma.vercel.app" || project.url === "https://uiimage.vercel.app/")
+                                ? " shadow-[-20px_-20px] shadow-[#cbd1eabe] "
+                                : "shadow-[20px_-20px] shadow-[#cbd1eabe]"
+                                }`} />
                         <main className='flex flex-col'>
                             <h1 className='text-xl font-bold mb-2'>{project.title}</h1>
                             <div className='flex gap-4 flex-wrap mb-3.5'>

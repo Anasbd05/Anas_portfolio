@@ -1,3 +1,5 @@
+"use client"
+import {motion} from 'framer-motion'
 import React from 'react'
 
 const Contact = () => {
@@ -9,7 +11,11 @@ const Contact = () => {
                     <p className='tag lg:leading-[58px] mb-6'>Have a Project? <br /> Let&#39;s talk! </p>
                     <button className='bg-to cursor-pointer hover:opacity-80 text-white py-2 w-32 font-medium rounded-lg hidden lg:block '>Send</button>
                 </div>
-                <div className="flex flex-col gap-3 w-3/4  lg:w-2/4">
+                <motion.div
+                    initial={{opacity: 0,scale: .8}}
+                    whileInView={{opacity: 1,scale: 1}}
+                    transition={{duration: 0.6}}
+                    className="flex flex-col gap-3 w-3/4  lg:w-2/4">
                     <div className='flex flex-col mb-1'>
                         <label className='font-medium text-black/70'>Name</label>
                         <input type="text" className='py-1.5 px-2 ring ring-black/30 shadow-sm rounded-lg  outline-none  ' placeholder='example' />
@@ -23,11 +29,11 @@ const Contact = () => {
                         <textarea className='py-1.5 px-2 ring ring-black/30 shadow-sm rounded-lg  h-32 outline-none ' placeholder='Enter you message here...' />
                     </div>
                     <button className='bg-to cursor-pointer hover:opacity-80 text-white py-2 w-32 lg:hidden block font-medium rounded-lg'>Send</button>
-                </div>
+                </motion.div>
 
             </main>
 
-        </section>
+        </section >
     )
 }
 
